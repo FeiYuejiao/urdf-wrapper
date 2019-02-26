@@ -1,0 +1,5 @@
+urdf_wrapper.egg-info/PKG-INFO
+urdf_wrapper.egg-info/SOURCES.txt
+urdf_wrapper.egg-info/dependency_links.txt
+urdf_wrapper.egg-info/requires.txt
+urdf_wrapper.egg-info/top_level.txt
