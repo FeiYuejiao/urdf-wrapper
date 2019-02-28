@@ -19,6 +19,9 @@ class QbotGenerator:
     """model: 'dog', 'mantis' """
 
     def __init__(self, b_dim, l_dim, f_dim, model):
+        for arg in [b_dim, l_dim, f_dim]:
+            assert isinstance(arg, tuple), "Arg: {},Type: {}".format(arg, type(arg))
+            assert len(arg) is 3, "Arg: {}, Length: {}".format(arg, len(arg))
         if model == 'mantis':
             leg_axis = '0 1 0'
         else:
@@ -142,4 +145,5 @@ class QbotGenerator:
                        'h_orig': h_orig,
                        'k_orig': k_orig,
                        'leg_index': leg_index,
-                       'foot_index': foot_index}
+                       'foot_index': foot_index,
+                       'file_name': file_name}

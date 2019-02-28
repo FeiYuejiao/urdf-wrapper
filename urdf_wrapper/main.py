@@ -12,7 +12,7 @@ class URDFWrapper:
                  branch_title='NEW BRANCH',
                  branch_name='NEW BRANCH',
                  size=None,
-                 shape=None,
+                 shape='box',
                  radius=None,
                  parent=None,
                  child=None,
@@ -77,21 +77,24 @@ class URDFWrapper:
         # Physical definitions
         if self.shape == 'box':
             volume = size[0] * size[1] * size[2]
-            self.mass = volume * 1000
-            m, h, d, w = self.mass / 12, size[0] ** 2, size[1] ** 2, size[2] ** 2
+            assert isinstance(volume, float), type(volume)
+            mass = volume * 1000
+            m, h, d, w = mass / 12, size[0] ** 2, size[1] ** 2, size[2] ** 2
             self.inertia = np.array([m * (h + d), m * (h + w), m * (d + w)])
         elif self.shape == 'sphere':
             r = self.radius
             volume = 4 * pi * r ** 3 / 3
-            self.mass = volume * 1000
+            assert volume is float
+            mass = volume * 1000
             value = 2 * pi * r ** 2 / 5
             self.inertia = np.array([value, value, value])
-
+        else:
+            raise Exception('Invalid Shape')
         # Write link
         self.write_print('<{0} name="{1}">'.format(self.branch_type, self.branch_name))
         self.write_visual()
         self.write_collision()
-        self.write_inertial()
+        self.write_inertial(mass)
         self.write_contact()
         self.write_print('</{0}>'.format(self.branch_type))
 
@@ -139,10 +142,11 @@ class URDFWrapper:
         self.write_print('<lateral_friction value="5"/>')
         self.write_print('</contact>')
 
-    def write_inertial(self):
+    def write_inertial(self, mass):
+        assert isinstance(mass, float), mass
         branch = 'inertial'
         self.write_print('<{0}>'.format(branch))
-        self.write_mass()
+        self.write_mass(mass)
         self.write_inertia()
         self.write_print('</{0}>'.format(branch))
         return
@@ -167,11 +171,14 @@ class URDFWrapper:
         self.write_print('<material name="{0}"/>'.format(self.color))
         return
 
-    def write_mass(self):
-        self.write_print('<mass value="{0:.3f}"/>'.format(self.mass))
+    def write_mass(self, mass):
+        assert isinstance(mass, float), mass
+        self.write_print('<mass value="{0:.3f}"/>'.format(mass))
         return
 
     def write_inertia(self):
-        self.write_print('<inertia \n ixx="{0:.3f}" ixy="0.0" \n ixz="0.0" iyy="{0:.3f}" ' +
-                         '\n iyz="0.0" izz="{1:.3f}"/>'.format(self.inertia[0], self.inertia[1], self.inertia[2]))
+        self.write_print('<inertia')
+        self.write_print('ixx="{}" ixy="0.0"'.format(self.inertia[0]))
+        self.write_print('ixz="0.0" iyy="{}"'.format(self.inertia[1]))
+        self.write_print('iyz="0.0" izz="{}"/>'.format(self.inertia[2]))
         return
