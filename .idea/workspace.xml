@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a21e4f99-8f46-4d2f-b857-e6c8882806c0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../gym-qbot/gym_qbot/a3c_ff_gaussian.py" beforeDir="false" afterPath="$PROJECT_DIR$/../gym-qbot/gym_qbot/a3c_ff_gaussian.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gym-qbot/gym_qbot/demo_v0.py" beforeDir="false" afterPath="$PROJECT_DIR$/../gym-qbot/gym_qbot/demo_v0.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gym-qbot/gym_qbot/envs/pybullet_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/../gym-qbot/gym_qbot/envs/pybullet_wrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gym-qbot/gym_qbot/envs/qbot_env_v0.py" beforeDir="false" afterPath="$PROJECT_DIR$/../gym-qbot/gym_qbot/envs/qbot_env_v0.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gym-qbot/gym_qbot/plotter.py" beforeDir="false" afterPath="$PROJECT_DIR$/../gym-qbot/gym_qbot/plotter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/urdf-wrapper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/urdf-wrapper.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/urdf_wrapper/qbot_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/urdf_wrapper/qbot_generator.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +24,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../gym-qbot/gym_qbot/envs/qbot_env_v0.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1080">
-              <caret line="72" column="68" lean-forward="true" selection-start-line="72" selection-start-column="68" selection-end-line="72" selection-end-column="68" />
+            <state relative-caret-position="440">
+              <caret line="35" column="29" lean-forward="true" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -34,10 +36,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../gym-qbot/gym_qbot/envs/pybullet_wrapper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="48" lean-forward="true" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+            <state>
+              <caret column="4" selection-start-column="4" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/urdf_wrapper/qbot_generator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="65" column="26" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
               <folding>
-                <element signature="e#0#20#0" expanded="true" />
+                <element signature="e#166#184#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -46,20 +57,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../gym-qbot/gym_qbot/demo_v0.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+            <state relative-caret-position="260">
+              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
               <folding>
-                <element signature="e#29#47#0" expanded="true" />
+                <element signature="e#125#143#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../gym-qbot/gym_qbot/a3c_ff_gaussian.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+              <folding>
+                <element signature="e#22#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../gym-qbot/gym_qbot/plotter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="58" column="45" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
+            <state relative-caret-position="815">
+              <caret line="64" selection-start-line="64" selection-end-line="64" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -136,19 +159,19 @@
         <option value="$PROJECT_DIR$/../gym-qbot/setup.py" />
         <option value="$PROJECT_DIR$/../gym-qbot/gym_qbot/envs/__init__.py" />
         <option value="$PROJECT_DIR$/../gym-qbot/gym_qbot/__init__.py" />
-        <option value="$PROJECT_DIR$/urdf_wrapper/qbot_generator.py" />
         <option value="$PROJECT_DIR$/urdf_wrapper/main.py" />
-        <option value="$PROJECT_DIR$/../gym-qbot/gym_qbot/a3c_ff_gaussian.py" />
         <option value="$PROJECT_DIR$/../gym-qbot/gym_qbot/lineplot.py" />
         <option value="$PROJECT_DIR$/../gym-qbot/archive/qbot_env_v3_archive.py" />
-        <option value="$PROJECT_DIR$/../gym-qbot/gym_qbot/envs/pybullet_wrapper.py" />
-        <option value="$PROJECT_DIR$/../gym-qbot/gym_qbot/envs/qbot_env_v0.py" />
-        <option value="$PROJECT_DIR$/../gym-qbot/gym_qbot/demo_v0.py" />
         <option value="$PROJECT_DIR$/../gym-qbot/gym_qbot/plotter.py" />
+        <option value="$PROJECT_DIR$/urdf_wrapper/qbot_generator.py" />
+        <option value="$PROJECT_DIR$/../gym-qbot/gym_qbot/envs/pybullet_wrapper.py" />
+        <option value="$PROJECT_DIR$/../gym-qbot/gym_qbot/demo_v0.py" />
+        <option value="$PROJECT_DIR$/../gym-qbot/gym_qbot/envs/qbot_env_v0.py" />
+        <option value="$PROJECT_DIR$/../gym-qbot/gym_qbot/a3c_ff_gaussian.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="1920" />
     <option name="height" value="1061" />
   </component>
@@ -158,6 +181,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -177,28 +201,16 @@
             <path>
               <item name="urdf-wrapper" type="b2602c69:ProjectViewProjectNode" />
               <item name="gym-qbot" type="462c0819:PsiDirectoryNode" />
-              <item name="archive" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="urdf-wrapper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gym-qbot" type="462c0819:PsiDirectoryNode" />
               <item name="gym_qbot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="urdf-wrapper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gym-qbot" type="462c0819:PsiDirectoryNode" />
-              <item name="gym_qbot" type="462c0819:PsiDirectoryNode" />
-              <item name="envs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gym_ws_archive/qbot-gym/qbot_gym/envs/bulletwrapper.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gym-qbot" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
@@ -236,19 +248,25 @@
       <option name="project" value="LOCAL" />
       <updated>1551314956481</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="message">
+      <created>1551354362295</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1551354362295</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1061" extended-state="0" />
-    <editor active="true" />
+    <frame x="64" y="-4" width="1857" height="1085" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1547492" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16196793" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Python Console" order="1" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.32911393" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.32810867" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
       <window_info anchor="bottom" id="Run" order="5" />
@@ -259,7 +277,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.2497332" />
-      <window_info active="true" anchor="right" id="Terminal" order="3" visible="true" weight="0.3719317" />
+      <window_info active="true" anchor="right" id="Terminal" order="3" visible="true" weight="0.3228303" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1547492" />
@@ -401,23 +419,6 @@
     <entry file="file://$PROJECT_DIR$/../gym-qbot/gym_qbot/0_VRDemoSettings.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/urdf_wrapper/qbot_generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="77" selection-start-line="23" selection-start-column="77" selection-end-line="23" selection-end-column="77" />
-          <folding>
-            <element signature="e#166#184#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gym-qbot/gym_qbot/a3c_ff_gaussian.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/urdf_wrapper/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="733">
@@ -428,42 +429,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../gym-qbot/gym_qbot/plotter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="815">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../gym-qbot/gym_qbot/envs/pybullet_wrapper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="48" lean-forward="true" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+        <state>
+          <caret column="4" selection-start-column="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urdf_wrapper/qbot_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="65" column="26" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
           <folding>
-            <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#166#184#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../qbot_archive/gym_ws_archive/qbot-gym/qbot_gym/demo8_ppo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2610" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gym-qbot/gym_qbot/demo_v0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding>
+            <element signature="e#125#143#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../gym-qbot/gym_qbot/envs/qbot_env_v0.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="72" column="68" lean-forward="true" selection-start-line="72" selection-start-column="68" selection-end-line="72" selection-end-column="68" />
+        <state relative-caret-position="440">
+          <caret line="35" column="29" lean-forward="true" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gym-qbot/gym_qbot/demo_v0.py">
+    <entry file="file://$PROJECT_DIR$/../gym-qbot/gym_qbot/a3c_ff_gaussian.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+        <state relative-caret-position="255">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
           <folding>
-            <element signature="e#29#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gym-qbot/gym_qbot/plotter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="58" column="45" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#22#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
