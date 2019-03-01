@@ -3,6 +3,9 @@ All units assumed to be m and kg."""
 
 import numpy as np
 from numpy import pi
+import os
+
+DEBUG = False
 
 
 class URDFWrapper:
@@ -21,20 +24,14 @@ class URDFWrapper:
                  color=None,
                  joint_type=None
                  ):
-        """
-        filename: string
-        branch_type: 'link', 'joint', 'materials', or 'start'
-        branch_title: string
-        size: (height, depth, width) of box, in meters
-        shape: 'box', 'sphere'
-        radius: radius of sphere, in meters
-        """
         # Reflexive Fields
+        if not os.path.isdir('urdf'):
+            os.mkdir('urdf')
         self.parent = parent
         self.radius = radius
         self.branch_type = branch_type
         self.branch_title = branch_title
-        self.file_name = file_name
+        self.file_name = 'urdf/' + file_name
         self.size = size
         self.shape = shape
         self.child = child
@@ -69,7 +66,8 @@ class URDFWrapper:
     def write_print(self, string):
         """Writes to file and prints to terminal"""
         self.f.write(string + '\n')
-        print(string)
+        if DEBUG:
+            print(string)
         return
 
     def link(self):
