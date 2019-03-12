@@ -59,8 +59,7 @@ class QbotGenerator:
             a, b, c = b_orig[0], b_orig[1], b_orig[2]
             a += (b_dim[0]*pos['x'] - l_dim[0]*pos['x'])/2
             b += b_dim[1]*pos['y']/2 - l_dim[1]*pos['y']/2
-            c -= b_dim[2]
-            # c *= 1.1
+            c -= b_dim[2]/2 + l_dim[0]/3
             h_orig.append(np.array([a, b, c]))
 
         # Leg origins
@@ -77,12 +76,12 @@ class QbotGenerator:
                 x_offset = 0
             elif model == 'mantis':
                 x_offset = l_dim[0]*pos['x']/2
-            k_orig.append(np.array([x_offset, 0, -l_dim[2]*1.2]))
+            k_orig.append(np.array((x_offset, 0, -l_dim[2] - l_dim[0]/3)))
 
         # Foot origins
         f_orig = []
         for i in range(4):
-            a, b, c = 0, 0, (-f_dim[2] / 2)*1.2
+            a, b, c = 0, 0, -f_dim[2] / 2
             f_orig.append(np.array([a, b, c]))
 
         # Write file
